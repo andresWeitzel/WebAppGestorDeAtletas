@@ -101,6 +101,8 @@
 ```
 <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+<script src="js/tuScriptParaFirestore.js"></script>
 ```
 ### 2) Solicitar de forma manual Firebase y Cloud Firestore( Dentro de js )
 ```
