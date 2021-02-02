@@ -104,7 +104,7 @@
 
 <script src="js/tuScriptParaFirestore.js"></script>
 ```
-### 2) Solicitar de forma manual Firebase y Cloud Firestore( Dentro de js )
+### 2) Solicitar de forma manual Firebase y Cloud Firestore( Dentro de tu Script para Firestore js )
 ```
 const firebase = require("firebase");
 // Required for side-effects
