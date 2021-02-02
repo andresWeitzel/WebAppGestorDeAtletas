@@ -104,14 +104,9 @@
 
 <script src="js/tuScriptParaFirestore.js"></script>
 ```
-### 2) Solicitar de forma manual Firebase y Cloud Firestore( Dentro de tu Script para Firestore js )
-```
-const firebase = require("firebase");
-// Required for side-effects
-require("firebase/firestore");
-```
 
-### 2) Inicializar una instancia de Cloud Firestore( Dentro del mismo js )
+
+### 2) Inicializar una instancia de Cloud Firestore( Dentro de tu Script para Firestore js )
 #### (La apiKey, auth y el proyectId lo encontrás en la parte de configuraciones de tu proyecto en la seccion Firebase SDK snippet)
 ```
 // Initialize Cloud Firestore through Firebase
