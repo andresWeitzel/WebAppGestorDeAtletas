@@ -95,7 +95,7 @@
 
 </br>
 
-## Incluir Firebase al Proyecto (Código)
+## Incluir Firebase al Proyecto (Código de Ejemplo)
 
 ### 1) Bibliotecas de Firebase( Dentro del index.html )
 ```
