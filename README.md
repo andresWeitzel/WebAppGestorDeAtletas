@@ -107,6 +107,7 @@
 
 
 ### 2) Inicializar una instancia de Cloud Firestore( Dentro de tu Script para Firestore js )
+#### (Se deberá clickear "Agregar Aplicación" en la parte de configuraciones del proyecto al final de todo para obtener el apiKey y todo lo demás)
 #### (La apiKey, auth y el proyectId lo encontrás en la parte de configuraciones de tu proyecto en la seccion Firebase SDK snippet)
 ```
 // Initialize Cloud Firestore through Firebase
