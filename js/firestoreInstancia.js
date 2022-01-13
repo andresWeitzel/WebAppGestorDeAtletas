@@ -9,27 +9,10 @@ firebase.initializeApp({
 var db = firebase.firestore();
 
 //AGREGAR DATA
-/* db.collection("users").add({
-        first: "Ada",
-        last: "Lovelace",
-        born: 1815
-    })
-    .then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
-    })
-    .catch(function(error) {
-        console.error("Error adding document: ", error);
-    }); */
-
-
-
-
-
-
 //Nuestra Funcion para insertar los valores de los inputs
 function insertarDatosAtletas() {
 
-    //var modalidad = document.getElementById('modalidad').value;
+    var modalidad = document.getElementById('modalidad').value;
 
     var nombre = document.getElementById('nombre').value;
 
@@ -46,7 +29,7 @@ function insertarDatosAtletas() {
 
 
     db.collection("dataAtletas").add({
-            //modalidad: modalidad,
+            modalidad: modalidad,
             nombre: nombre,
             apellido: apellido,
             edad: edad,
@@ -57,9 +40,22 @@ function insertarDatosAtletas() {
         })
         .then(function(docRef) {
             console.log("Document written with ID: ", docRef.id);
+
+
+
         })
         .catch(function(error) {
             console.error("Error adding document: ", error);
         });
+
+}
+
+
+function insercionValidadaDatosAtletas() {
+
+    if (flagValidacionInsercionDatosAtletas === true) {
+        insertarDatosAtletas();
+    }
+    //insertarDatosAtletas();
 
 }

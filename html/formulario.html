@@ -4,8 +4,8 @@
 <link>
 <meta charset="UTF-8">
 <title>Gestión de Atletas</title>
-<link rel="shortcut icon" href="../imagenes/olimpico.ico">
-<link rel="stylesheet" href="../css/index.css"></link>
+<link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/3295/premium/3295617.png?token=exp=1642082186~hmac=b9f5b7d4a7242b52c223c36419479ab6">
+<link rel="stylesheet" href="/css/index.css"></link>
 <!--BOOTSTRAP-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <!--FIN BOOTSTRAP-->
@@ -19,7 +19,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top ">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="../imagenes/atleta.png" width="30" height="30" alt="" class="d-inline-block align-top " alt="" loading="lazy"> Gestión de Atletas
+                    <img src="https://cdn-icons.flaticon.com/png/512/3295/premium/3295617.png?token=exp=1642082186~hmac=b9f5b7d4a7242b52c223c36419479ab6" width="30" height="30" alt="" class="d-inline-block align-top " alt="" loading="lazy"><strong> Gestión de
+                    Atletas</strong>
                 </a>
 
                 <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,11 +31,20 @@
                 <div class="collapse navbar-collapse text-center" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item" routerLinkActive="active">
-                            <a class="nav-link" routerLink="../inicio">Inicio
+                            <a class="nav-link" href="/index.html">Inicio
                       </a>
                         </li>
                         <li class="nav-item" routerLinkActive="active">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalAyuda">Ayuda</a>
+                            <a class="nav-link" href="/html/listadoAtletas.html">Atletas
+                      </a>
+                        </li>
+                        <li class="nav-item" routerLinkActive="active">
+                            <a class="nav-link" href="/html/formulario.html">Formulario
+                      </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalAyuda">Ayuda
+                            </a>
                         </li>
 
 
@@ -45,12 +55,36 @@
         </nav>
         <!-- Fin Navigation -->
 
+        <!--MODAL AYUDA-->
+        <section class="text-center">
+            <div class="modal fade " id="modalAyuda" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="https://cdn-icons.flaticon.com/png/512/3295/premium/3295617.png?token=exp=1642082186~hmac=b9f5b7d4a7242b52c223c36419479ab6" width="30" height="30" alt="" class="d-inline-block align-top " alt="" loading="lazy">
+                            <h3 class="modal-title">Gestión de Atletas</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                        </div>
+                        <div class="modal-body">
+                            <p> Para Agregar atletas de varias modalidades dirigirse a la sección de Formulario, es necesario agregar todos los campos y dicho formulario posee su correspondiente validación. </br>
+                                </br><strong>En cada una de las secciones podrás encontrar más información!!
+                        </strong></p>
+                            <div class="">
+                                <button type="button " class="btn btn-warning " data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--FIN MODAL AYUDA-->
+
+
     </header>
-    <!---FIN FOOTER-->
-
-
-
-
+    <!---FIN HEADER-->
 
 
 
@@ -63,13 +97,142 @@
             <h3 class="shadow-lg p-3 mb-5 bg-white rounded">FORMULARIO DE ATLETAS</h3>
         </div>
         <hr>
+
+
+
+
+        <form class="needs-validation" novalidate>
+
+            <div class="text-left p-2 m-2">
+
+                <div class="form-group">
+
+                    <label for="modalidad"><h5><strong>MODALIDAD:</strong></h5></label>
+
+                    <select class="form-control  rounded-pill" id="modalidad" required>
+                        <option selected disabled value="">Elija una opción</option>
+                        <option><strong>Basquetball</strong></option>
+                        <option><strong>Natación</strong></option>
+                        <option><strong>Atletismo</strong></option>
+                        <option><strong>Otros</strong></option>
+                     </select>
+                    <div class="valid-feedback">
+                        Tipo de Modalidad Ingresada!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar una Modalidad!
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="modalidad"><h5><strong>CATEGORIA:</strong></h5></label>
+
+                    <select class="form-control  rounded-pill" id="modalidad" required>
+                        <option selected disabled value="">Elija una opción</option>
+                        <option><strong>Sub-18- Juvenil (Hasta 18 años)</strong></option>
+                        <option><strong>Juvenil Completo (Hasta 19 años)</strong></option>
+                        <option><strong>Senior (Hasta 23 años)</strong></option>
+                        <option><strong>Veterano (Hasta 50 años)</strong></option>
+                     </select>
+                    <div class="valid-feedback">
+                        Tipo de Modalidad Ingresada!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar una Modalidad!
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="nombre"> <h5>Nombre:</h5></label>
+
+                    <input type="text" class="form-control  rounded-pill" id="nombre" placeholder="Ingrese un Nombre" required>
+                    <div class="valid-feedback">
+                        Nombre Ingresado!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar un Nombre!
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="apellido"> <h5>Apellido:</h5></label>
+
+                    <input class="form-control  rounded-pill" type="text" id="apellido" placeholder="Ingrese un apellido" required>
+                    <div class="valid-feedback">
+                        Apellido Ingresado!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar un Apellido!
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="edad"><h5>Edad:</h5></label>
+
+                    <input class="form-control  rounded-pill" type="number" id="edad" placeholder="Ingrese una edad" required>
+                    <div class="valid-feedback">
+                        Edad Ingresado!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar una Edad!
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="peso"><h5>Peso:</h5></label>
+
+                    <input class="form-control rounded-pill" type="number" id="peso" placeholder="Ingrese un peso" required>
+                    <div class="valid-feedback">
+                        Peso Ingresado!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar un Peso!
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="altura"><h5>Altura:</h5></label>
+
+                    <input class="form-control  rounded-pill" type="number" id="altura" placeholder="Ingrese una altura" required>
+                    <div class="valid-feedback">
+                        Altura Ingresada!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar una Altura!
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="email"><h5>Correo Electrónico</h5></label>
+
+                    <input type="email" class="form-control  rounded-pill" id="email" placeholder="ingrese algun correo electronico (ej: ejemplo@gmail.com)" required>
+                    <div class="valid-feedback">
+                        Correo Electrónico Ingresado!
+                    </div>
+                    <div class="invalid-feedback">
+                        Debes ingresar un Correo Electrónico!
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="m-2 p-2 text-center">
+                    <button type="reset" class="btn btn-warning mb-2">BORRAR</button>
+                    <button type="submit" class="btn btn-warning ml-3 mb-2" onclick="insercionValidadaDatosAtletas()">ENVIAR</button>
+                </div>
+
+
+                <hr>
+
+            </div>
+
+
+        </form>
+
     </section>
-
-
-
-
-
-
 
 
 
@@ -158,7 +321,7 @@
                     <div class=" mr-0 ml-5 text-dark text-center">
                         <hr class="bg-dark">
                         <p class="text-right ml-5 mr-0">
-                            Open Source | 2020.
+                            Open Source | 2021.
                         </p>
                     </div>
                 </div>
@@ -190,7 +353,7 @@
     <!--FIN INSTANCIA FIRESTORE-->
 
     <!--CONTROL DE FORMULARIO-->
-    <script src="../js/controlFormulario.js"></script>
+    <script src="../js/formulario.js"></script>
     <!--FIN CONTROL DE FORMULARIO-->
 
 </body>
